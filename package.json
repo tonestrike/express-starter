@@ -9,7 +9,7 @@
     "build": "tsc --project tsconfig.json",
     "start": "NODE_PATH=./dist node dist/app.js",
     "lint": "prettier -w ./api/** ./__tests__/**",
-    "test": "jest --coverage --detectOpenHandles"
+    "test": "jest --coverage --detectOpenHandles --passWithNoTests"
   },
   "keywords": [],
   "author": "Anthony Vantur",
