@@ -1,0 +1,51 @@
+{
+  "name": "kovo-code-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "tsc": "tsc --watch --project tsconfig.json",
+    "dev": "NODE_ENV=local NODE_PATH=./dist nodemon  -r source-map-support/register dist/app.js",
+    "build": "tsc --project tsconfig.json",
+    "start": "NODE_PATH=./dist node dist/app.js",
+    "lint": "prettier -w ./api/** ./__tests__/**",
+    "test": "jest --coverage --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "Anthony Vantur",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "dotenv-safe": "^8.2.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.15.0",
+    "file-system-cache": "^2.0.2",
+    "helmet": "^4.4.1",
+    "nocache": "^2.1.0",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@types/bluebird": "^3.5.38",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.9",
+    "@types/dotenv-safe": "^8.1.1",
+    "@types/express-session": "^1.17.3",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^14.14.22",
+    "@types/supertest": "^2.0.12",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.4",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.9.5"
+  }
+}

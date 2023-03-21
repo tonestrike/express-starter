@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "api",
+    "target": "es6",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "types": ["jest", "express"],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/api/types/**/*"
+    ],
+    "skipLibCheck": true
+  },
+  "include": [
+    "./api/**/*"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./coverage",
+    "__tests__",
+    "jest.config.js"
+  ]
+}
