@@ -1,4 +1,4 @@
-# Kovo Coding Sample
+# Express starter
 
 ## Setup application
 1. `yarn`
